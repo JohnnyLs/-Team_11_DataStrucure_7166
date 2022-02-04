@@ -1,74 +1,46 @@
-#include <iostream>
-#include "Operacion.h"
+#include  <cstdlib> 
+#include  <iostream> 
+#include  <conio.h> 
+#include  <windows.h> 
+#define vertices 500
+#define nodos 300
+#include "Operacion.cpp"
+using namespace std;
 
-void OperacionesMatriz::IngresarMatriz(int ad[][vertices],int nds, int arst)
-{   
-  int i,j,nodoi,nodof; 
-  
-  for(i=0;i < nds;i++)
-   { for(j=0;j < nds;j++)
-        { ad[i][j]=0;}
-   }
-   
-  //Llenamos la  matriz
-  for(i=0;i < arst;i++)  
-   { cout << "\n\n\tArista " << i+1 << "\n";
-     cout << "\tN. inicio: ";
-     cin >> nodoi;
-     cout << "\tN. termino: ";
-     cin >> nodof;   
-     
-     ad[nodoi-1][nodof-1]=1;
-     ad[nodof-1][nodoi-1]=1;
-   } 
-  
-   //Matriz de Adyacencia    
-  /* for(i=0;i < nds;i++)
+int main(int argc, char *argv[])
+{
+  int i,j,cant_nodos,cant_aristas,ad[vertices][vertices];
+  char s,N,n;
+  do{  
+  cout << "\n\t\tALGORITMO DE BUSQUEDA EXHAUSTIVA PARA EL COLOREADO DE MAPAS\n";  
+  cout << "\t\t--------------------------------------------------\n"; 
+
+  cout << "\n\n\t Ingrese Datos \n"; 
+  cout << "\n\t Numero de Nodos: ";
+  cin >> cant_nodos;
+  cout << "\t Aristas: ";
+  cin >> cant_aristas;  
+  OperacionesMatriz ope;
+  //Aqui se  crea la matriz de  adyacencia
+  ope.IngresarMatriz(ad,cant_nodos,cant_aristas);//,ad);
+  //Mostrar Matriz de Adyacencia
+  /* cout <  < "\n\t";
+   for(i=0;i < nds;i++)
      { for(j=0;j < nds;j++)
          ad[i][j]=ad[i][j]; 
-     
-      }*/
-}
-
-void OperacionesMatriz::BusquedaExhaustiva(int ad[][vertices],int nds)
-{ 
-  ver v[nds];
-  int i,j,aux,zz,max=1;   
-
-  //Etapa de  Coloracion
-   for(i=0;i < nds;i++)
-    {v[i].color=1;
-     zz=0;
-     aux=1;
-     while(aux==1)
-      {for(j=0;j < nds;j++)
-         { if(ad[j][i]==1)
-            {if(v[i].color==v[j].color)
-               { zz=1;}
-            }
-         }
-         if(zz==1)
-           {aux=1;
-            zz=0;
-            v[i].color++;
-           }
-         else
-            {aux=0;}
-            if(v[i].color   >   max)
-              { max=v[i].color;}
-       }
-     }
-
-  cout << "\n\tAlgoritmo Busqueda Exhaustiva \n" << "\tmaxcolor= " << max << "\n";
-
-  //Se imprime el  conjunto de  vertices  de  cada color    
-  for(i=0;i < max;i++)
-  {printf("\t  %c= { ",'a'+i);
-    for(j=0;j < nds;j++)
-     { if(v[j].color==i+1)
-         cout << " " << j+1;        
-     }
-    cout << "  }\n";
-  }
-
+        cout <  < "\n\t";
+      }
+  */    
+  //Se colorea vertice  a  vertice en  el  orden inicial
+  ope.BusquedaExhaustiva(ad,cant_nodos);//,ad);  
+ cout << "\n\tSi desea continuar presione cualquier tecla \n\tSi no escriba 'n' o 'N': ";
+ s=getch();
+ system("cls");
+  }while(s!='N' && s!='n');
+ cout << "Hasta Luego!!!!";
+ Sleep(1600);
+ exit(0);    
+  
+ cout << "\n\n";
+ system("PAUSE");
 }
