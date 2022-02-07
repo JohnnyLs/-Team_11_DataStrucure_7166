@@ -1,31 +1,28 @@
 #include <iostream>
-#include "CLatino.h"
+#include "Cuadro.h"
 #include "Matriz.h"
-#include "Tools.h"
+
 
 using namespace std;
 
 int main()
 {
-	Tools tls;
-	int dimension;
-
-	cout << "CUADRADO LATINO" << endl;
+	int d;
 
 	do
 	{
-		dimension = tls.validate_int("\nIngrese la dimension del cuadro: ");
+		d=("\nIngrese la dimension del cuadro: ");
 	} while (dimension < 1 || dimension % 2 == 0);
 
-	Matriz mat(dimension);
+	Matriz mat(d);
 	CLatino cuadroLatino;
 
-	mat.segmentarMatriz(dimension);
-	mat.encerarMatriz(dimension);
+	mat.segmentar(d);
+	mat.encerar(d);
 
-	cuadroLatino.crearCuadro(mat);
+	cuadroLatino.cuadroLatino(mat);
 
-	mat.imprimir(dimension);
+	mat.imprimir(d);
 
 	return 0;
 
