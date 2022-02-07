@@ -6,8 +6,10 @@ private:
 	int** mat;
 public:
 	Matriz() = default;
-	int** get_matriz();
-	void set_matriz(int**);
+	int getD();
+	int setD();
+	int** getMtriz();
+	void setMatriz(int**);
 	int** segmentar(int);
 	void encerar(int);
 	void ingresar(int**, int);
