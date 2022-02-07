@@ -45,12 +45,3 @@ void imprimir(int** mat, int d) {
 		printf("\n");
 	}
 }
-void procesar(int** m1, int** m2, int** mr, int d) {
-	for (int i = 0; i < d; i++) {
-		for (int j = 0; j < d; j++) {
-			for (int h = 0; h < d; h++) {
-				*(*(mr + i) + j) = *(*(mr + i) + j) + (*(*(m1 + i) + h)) * (*(*(m2 + h) + j));
-			}
-		}
-	}
-}
