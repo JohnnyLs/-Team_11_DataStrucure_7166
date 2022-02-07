@@ -2,11 +2,8 @@
 class Operaciones {
 
 private:
-    int fil, indice;
-
+    int n;
 public:
-    int llenar(int, int);
-    void espacio(int);
-    void imprimir(int, int, int, int, bool);
-    void triangulo(int);
+    int combinacion(int, int);
+    int factorial(int);
 };
