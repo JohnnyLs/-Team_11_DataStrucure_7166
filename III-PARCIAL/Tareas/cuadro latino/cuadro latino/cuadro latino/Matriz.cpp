@@ -6,11 +6,11 @@
 #include <string.h>
 
 using namespace std;
-int** Matriz::get_matriz() {
+int** Matriz::getMatriz() {
 	return mat;
 }
 
-void Matriz::set_matriz(int** m1) {
+void Matriz::setMatriz(int** m1) {
 	mat = m1;
 }
 int** segmentar(int d) {
