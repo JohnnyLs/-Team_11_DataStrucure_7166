@@ -9,21 +9,27 @@ using namespace std;
 
 void Cuadro::cuadroLatino(Matriz matriz)
 {
-	int** a = matriz.get_matriz();
-	for (int i = 0; i < matriz.get_dim(); i++)
+	int** matA = matrix.getMatriz();
+	for (int i = 0; i < matrix.getD(); i++)
 	{
-		for (int j = 0; j < matriz.get_dim(); j++)
+		for (int j = 0; j < matrix.getD(); j++)
 		{
 			if (i == 0)
-				a[i][j] = j + 1;
-			else {
-				if (a[i - 1][j] < matriz.get_dim()) {
-					a[i][j] = a[i - 1][j] + 1;
+			{
+				matA[i][j] = j + 1;
+			}
+			else
+			{
+				if (matA[i - 1][j] < matrix.get())
+				{
+					matA[i][j] = matA[i - 1][j] + 1;
 				}
-				else {
-					a[i][j] = 1;
+				else
+				{
+					matA[i][j] = 1;
 				}
 			}
 		}
 	}
+
 }
