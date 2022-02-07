@@ -2,7 +2,7 @@
  *				Carrera: Software													 *
  *				Autores: Loachamin Johnny, Zumba ALvaro								 *
  *				Fecha de creacion: 05/02/2022										 *
- *				Fecha de modificación: 07/02/2022									 *
+ *				Fecha de modificaciÃ³n: 07/02/2022									 *
  *************************************************************************************/
 #include <iostream>
 #include "Operaciones.h"
@@ -11,11 +11,20 @@ using namespace std;
 int main()
 {
     Operaciones op;
-    int fill= 0;
+    int n= 0;
+    int i, j;
     setlocale(LC_ALL, "spanish");
-    while (fill< 1) {
-        cout << "Ingrese el número de filas:";
-        cin >> fill;
-    }
-    op.triangulo(fill);
+    cout << "ingrese el nÃºmero de filas: ";
+    cin >> n;
+
+    for (int i = 0; i < n; i++) {
+        //imprime los espacios
+        for (j = 0; j <= n - i; j++)
+            cout << " ";
+        //imprime la ocmbinacion de i y j
+        for (j = 0; j <= i; j++)
+            cout << op.combinacion(i, j) << " ";
+        cout << endl;
+    }  
+    return 0;
 }
