@@ -1,16 +1,16 @@
 /***********************************************************************
  * Module:  Fabrica.h
  * Author:  Alvaro Zuma, Johnny Loachamin
- * Modified: Sunday, Febraury 6, 2022 8:55:50 PM
+ * Modified: Sunday, Febraury 8, 2022 8:55:50 PM
  * Purpose: Declaration of the class Fabrica
  ***********************************************************************/
 
 #include<iostream>
 
-#if !defined(__BIBLIOTECA_LISTA_DOBLE2_Editorial_h)
-#define __BIBLIOTECA_LISTA_DOBLE2_Editorial_h
+#if !defined(__MACHINES4FUN_LISTA_DOBLE2_Fabrica_h)
+#define __MACHINES4FUN_LISTA_DOBLE2_Fabrica_h
 
-class Editorial
+class Fabrica
 {
 public:
    Fabrica();
