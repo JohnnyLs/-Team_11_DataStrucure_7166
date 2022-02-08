@@ -1,0 +1,13 @@
+﻿  Cuadro.cpp
+C:\Users\Asus\Desktop\RepoGrupo11\-Team_11_DataStrucure_7166\III-PARCIAL\Tareas\cuadro latino\cuadro latino\cuadro latino\Matriz.h(18,1): error C2143: error de sintaxis: falta ';' delante de '}'
+C:\Users\Asus\Desktop\RepoGrupo11\-Team_11_DataStrucure_7166\III-PARCIAL\Tareas\cuadro latino\cuadro latino\cuadro latino\Cuadro.cpp(12,15): error C2065: 'matrix': identificador no declarado
+C:\Users\Asus\Desktop\RepoGrupo11\-Team_11_DataStrucure_7166\III-PARCIAL\Tareas\cuadro latino\cuadro latino\cuadro latino\Cuadro.cpp(13,22): error C2065: 'matrix': identificador no declarado
+C:\Users\Asus\Desktop\RepoGrupo11\-Team_11_DataStrucure_7166\III-PARCIAL\Tareas\cuadro latino\cuadro latino\cuadro latino\Cuadro.cpp(15,23): error C2065: 'matrix': identificador no declarado
+C:\Users\Asus\Desktop\RepoGrupo11\-Team_11_DataStrucure_7166\III-PARCIAL\Tareas\cuadro latino\cuadro latino\cuadro latino\Cuadro.cpp(23,26): error C2065: 'matrix': identificador no declarado
+  Matriz.cpp
+C:\Users\Asus\Desktop\RepoGrupo11\-Team_11_DataStrucure_7166\III-PARCIAL\Tareas\cuadro latino\cuadro latino\cuadro latino\Matriz.h(18,1): error C2143: error de sintaxis: falta ';' delante de '}'
+C:\Users\Asus\Desktop\RepoGrupo11\-Team_11_DataStrucure_7166\III-PARCIAL\Tareas\cuadro latino\cuadro latino\cuadro latino\Matriz.cpp(9,15): error C2039: "getMatriz": no es un miembro de "Matriz"
+C:\Users\Asus\Desktop\RepoGrupo11\-Team_11_DataStrucure_7166\III-PARCIAL\Tareas\cuadro latino\cuadro latino\cuadro latino\Matriz.h(2): message : vea la declaración de 'Matriz'
+C:\Users\Asus\Desktop\RepoGrupo11\-Team_11_DataStrucure_7166\III-PARCIAL\Tareas\cuadro latino\cuadro latino\cuadro latino\Matriz.cpp(10,9): error C2065: 'mat': identificador no declarado
+C:\Users\Asus\Desktop\RepoGrupo11\-Team_11_DataStrucure_7166\III-PARCIAL\Tareas\cuadro latino\cuadro latino\cuadro latino\Matriz.cpp(35,4): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Generando código...

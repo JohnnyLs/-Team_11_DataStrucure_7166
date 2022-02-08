@@ -14,14 +14,15 @@ int main()
     int n= 0;
     int i, j;
     setlocale(LC_ALL, "spanish");
-    cout << "ingrese el número de filas: ";
+    cout << "ingrese el numero de filas: ";
     cin >> n;
 
-    for (int i = 0; i < n; i++) {
-        //imprime los espacios
+    for (int i = n-1; i >=0 ; i--) 
+    {
+        //Triangulo de pascal invertido
         for (j = 0; j <= n - i; j++)
             cout << " ";
-        //imprime la ocmbinacion de i y j
+        //imprime la combinacion de i y j
         for (j = 0; j <= i; j++)
             cout << op.combinacion(i, j) << " ";
         cout << endl;

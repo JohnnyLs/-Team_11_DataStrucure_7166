@@ -5,8 +5,8 @@
  * Purpose: Declaration of the class Maquina
  ***********************************************************************/
 
-#if !defined(__BIBLIOTECA_LISTA_DOBLE2_Libro_h)
-#define __BIBLIOTECA_LISTA_DOBLE2_Libro_h
+#if !defined(__MACHINES4FUN_LISTA_DOBLE2_Maquina_h)
+#define __MACHINES4FUN_LISTA_DOBLE2_Maquina_h
 
 
 class Maquina
