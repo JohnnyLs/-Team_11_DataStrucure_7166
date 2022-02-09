@@ -1,18 +1,77 @@
 #pragma once
-class Matriz
+/***********************************************************************
+			UFA-ESPE
+			SOFTWARE
+			Autores: Loachamín Johnny, Zumba Alvaro
+			Fecha de creación: 06/02/2022
+			Fecha de modificación: 06/02/2022
+ ***********************************************************************/
+#include <stdexcept>
+using std::runtime_error;
+template <typename E>
+class Matrix
 {
 private:
-	int d;
-	int** mat;
+	int rows;
+	int columns;
+	E** matrix;
 public:
-	Matriz() = default;
-	int getD();
-	int setD();
-	int** getMtriz();
-	void setMatriz(int**);
-	int** segmentar(int);
-	void encerar(int);
-	void ingresar(int**, int);
-	void imprimir(int**, int);
-	void procesar(int**, int**, int**, int)
+	Matrix(int rows, int columns);
+	void reservarMemoria();
+	~Matrix();
+	E getValue(int row, int column);
+	void setValue(int row, int column, E value);
+	int getRows();
+	int getColumns();
 };
+
+template <typename E>
+
+Matrix<E>::Matrix(int rows, int columns) {
+	this->rows = rows;
+	this->columns = columns;
+}
+
+template <typename E>
+void Matrix<E>::reservarMemoria() {
+	matrix = new E * [rows];
+	for (int i = 0; i < rows; i++) {
+		matrix[i] = new E[columns];
+	}
+}
+
+template <typename E>
+Matrix<E>::~Matrix() {
+	for (int i = 0; i < rows; i++) {
+		delete[] matrix[i];
+	}
+	delete[]matrix;
+}
+template <typename E>
+E Matrix<E>::getValue(int row, int column) {
+	if ((row < 0) || (row > rows))
+		throw runtime_error("Fila invalida");
+	if (column<0 || column>columns)
+		throw runtime_error("Columna invalida");
+	return matrix[row][column];
+}
+
+
+template <typename E>
+void Matrix<E>::setValue(int row, int column, E value) {
+	if (row<0 || row>rows)
+		throw runtime_error("Fila invalida");
+	if (column<0 || column>columns)
+		throw runtime_error("Columna invalida");
+	matrix[row][column] = value;
+}
+
+template <typename E>
+int Matrix<E>::getRows() {
+	return rows;
+}
+
+template <typename E>
+int Matrix<E>::getColumns() {
+	return columns;
+}
