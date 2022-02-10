@@ -82,7 +82,7 @@ void Maquina::setNombreMaquina(std::string newNombreMaquina)
 // Return:     Operador
 ////////////////////////////////////////////////////////////////////////
 
-Autor Maquina::getOperador(void)
+Operador Maquina::getOperador(void)
 {
    return operador;
 }

@@ -9,6 +9,11 @@
 #define __MACHINES4FUN_LISTA_DOBLE2_Maquina_h
 
 
+
+#include "Operador.h"
+#include "Pais.h"
+#include "Fabrica.h"
+
 class Maquina
 {
 public:
@@ -18,7 +23,7 @@ public:
    void setIdMaquina(int newIdMaquina);
    std::string getNombreMaquina(void);
    void setNombreMaquina(std::string newNombreMaquina);
-   Autor getOperador(void);
+   Operador getOperador(void);
    void setOperador(Operador newOperador);
    Pais getPais(void);
    void setPais(Pais newPais);

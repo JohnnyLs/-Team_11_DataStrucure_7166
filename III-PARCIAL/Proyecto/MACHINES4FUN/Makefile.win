@@ -4,8 +4,8 @@
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = main.o Fabrica.o Maquina.o
-LINKOBJ  = main.o Fabrica.o Maquina.o
+OBJ      = main.o Fabrica.o Maquina.o Operador.o Persona.o Nodo.o Pais.o ListaDobleCircular.o
+LINKOBJ  = main.o Fabrica.o Maquina.o Operador.o Persona.o Nodo.o Pais.o ListaDobleCircular.o
 LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
 INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
@@ -32,3 +32,18 @@ Fabrica.o: Fabrica.cpp
 
 Maquina.o: Maquina.cpp
 	$(CPP) -c Maquina.cpp -o Maquina.o $(CXXFLAGS)
+
+Operador.o: Operador.cpp
+	$(CPP) -c Operador.cpp -o Operador.o $(CXXFLAGS)
+
+Persona.o: Persona.cpp
+	$(CPP) -c Persona.cpp -o Persona.o $(CXXFLAGS)
+
+Nodo.o: Nodo.cpp
+	$(CPP) -c Nodo.cpp -o Nodo.o $(CXXFLAGS)
+
+Pais.o: Pais.cpp
+	$(CPP) -c Pais.cpp -o Pais.o $(CXXFLAGS)
+
+ListaDobleCircular.o: ListaDobleCircular.cpp
+	$(CPP) -c ListaDobleCircular.cpp -o ListaDobleCircular.o $(CXXFLAGS)
