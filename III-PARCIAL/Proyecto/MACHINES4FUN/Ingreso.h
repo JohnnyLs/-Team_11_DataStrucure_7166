@@ -130,7 +130,7 @@ char * Ingreso::ingresoCorreo(char * mensage) {
 	if(validar){
         printf("\nCORREO NO VALIDO VUELVA A INGRESAR\n");
         free(lectura);
-        lectura=ingresoCorreo(mensage);
+        lectur=ingresoCorreo(mensage);
 	}
 
 	return lectura;
