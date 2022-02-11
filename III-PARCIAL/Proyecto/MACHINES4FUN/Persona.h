@@ -6,8 +6,8 @@
  ***********************************************************************/
 #include<iostream>
 
-#if !defined(__BIBLIOTECA_LISTA_DOBLE_Persona_h)
-#define __BIBLIOTECA_LISTA_DOBLE_Persona_h
+#if !defined(__MACHINE4FUN_LISTA_DOBLE_Persona_h)
+#define __MACHINE4FUN_LISTA_DOBLE_Persona_h
 
 class Persona
 {

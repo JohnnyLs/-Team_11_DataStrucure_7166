@@ -1,10 +1,9 @@
-/******************************************************************
-*            UNIVERSIDAD DE LAS FUERZAS ARMADAS ESPE              *
-* CARRERA: Ingenieria de Software                                 *
-* SEMESTRE: Tercer semestre                                       *
-* MATERIA: Estructura de Datos                                    *
-* NRC: 2967                                                       *
-******************************************************************/
+/******************  Universidad de las Fuerzas Armadas ESPE  ************************
+ *				Carrera: Software													 *
+ *				Autores: Loachamin Johnny, Zumba ALvaro								 *
+ *				Fecha de creacion: 05/02/2022										 *
+ *				Fecha de modificación: 10/02/2022									 *
+ *************************************************************************************/
 
 #include <iostream>
 #include <windows.h>

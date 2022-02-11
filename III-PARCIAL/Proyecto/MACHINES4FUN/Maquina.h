@@ -9,7 +9,6 @@
 #define __MACHINES4FUN_LISTA_DOBLE2_Maquina_h
 
 
-
 #include "Operador.h"
 #include "Pais.h"
 #include "Fabrica.h"

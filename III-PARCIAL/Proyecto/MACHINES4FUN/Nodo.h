@@ -1,9 +1,9 @@
-/***********************************************************************
- * Module:  Operador.h
- * Author:  Alvaro Zuma, Johnny Loachamin
- * Modified: Wednesday, February 09, 2021 19:21:50 PM
- * Purpose: Declaration of the class Nodo
- ***********************************************************************/
+/******************  Universidad de las Fuerzas Armadas ESPE  ************************
+ *				Carrera: Software													 *
+ *				Autores: Loachamin Johnny, Zumba ALvaro								 *
+ *				Fecha de creacion: 04/02/2022										 *
+ *				Fecha de modificación: 10/02/2022									 *
+ *************************************************************************************/
 
 #if !defined(__MACHINES4FUN_LISTA_DOBLE2_Nodo_h)
 #define __MACHINES4FUN_LISTA_DOBLE2_Nodo_h
