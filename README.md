@@ -1,6 +1,5 @@
 # Team_10_DataStrucure_7166
 The best team in the whole world
-
 <p align="center">
   <img width="595" height="186" src="https://www.espe-innovativa.edu.ec/ambiente/wp-content/uploads/logo_espe.png">
 </p>
