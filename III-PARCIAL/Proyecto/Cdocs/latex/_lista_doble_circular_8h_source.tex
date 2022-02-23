@@ -1,0 +1,42 @@
+\hypertarget{_lista_doble_circular_8h_source}{}\doxysection{Lista\+Doble\+Circular.\+h}
+\mbox{\hyperlink{_lista_doble_circular_8h}{Ir a la documentación de este archivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/***********************************************************************}}
+\DoxyCodeLine{2 \textcolor{comment}{ * Module:  ListaDobleCircular.h}}
+\DoxyCodeLine{3 \textcolor{comment}{ * Modified: Wednesday, February 09, 2021 22:51:10 PM}}
+\DoxyCodeLine{4 \textcolor{comment}{ * Purpose: Declaration of the class ListaDobleCircular}}
+\DoxyCodeLine{5 \textcolor{comment}{ ***********************************************************************/}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#if !defined(\_\_MACHINE4FUN\_LISTA\_DOBLE2\_ListaDobleCircular\_h)}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#define \_\_MACHINE4FUN\_LISTA\_DOBLE2\_ListaDobleCircular\_h}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_nodo_8h}{Nodo.h}}"{}}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_maquina_8h}{Maquina.h}}"{}}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{keyword}{class }\mbox{\hyperlink{class_lista_doble_circular}{ListaDobleCircular}}}
+\DoxyCodeLine{14 \{}
+\DoxyCodeLine{15 \textcolor{keyword}{public}:}
+\DoxyCodeLine{16    \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_lista_doble_circular_ad0a2c49cbf2f5f6e913b922beb7fb441}{vacia}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{17    \textcolor{keywordtype}{void} \mbox{\hyperlink{class_lista_doble_circular_a77c89874f51c3b0523009ef064d118f9}{insertarInicio}}(\mbox{\hyperlink{class_maquina}{Maquina}} newMaquina);}
+\DoxyCodeLine{18    \textcolor{keywordtype}{void} \mbox{\hyperlink{class_lista_doble_circular_a3bc0f98d261069635c84df5b1e4751ac}{insertarFinal}}(\mbox{\hyperlink{class_maquina}{Maquina}} newMaquina);}
+\DoxyCodeLine{19    \textcolor{keywordtype}{void} \mbox{\hyperlink{class_lista_doble_circular_a67bb24669dce3105522780eb1c499ba4}{insertarPosicion}}(\textcolor{keywordtype}{int} newPosicion, \mbox{\hyperlink{class_maquina}{Maquina}} newMaquina);}
+\DoxyCodeLine{20    \textcolor{keywordtype}{int} \mbox{\hyperlink{class_lista_doble_circular_a5c32b33f1de19de8af88c3c7311c15cb}{buscarPosicionMaquinaId}}(\textcolor{keywordtype}{int} idMaquina);}
+\DoxyCodeLine{21    \textcolor{keywordtype}{void} \mbox{\hyperlink{class_lista_doble_circular_a596d5980391a48c4c0b5dd59866494f2}{modificarPorId}}(\textcolor{keywordtype}{int} idMaquina, \mbox{\hyperlink{class_maquina}{Maquina}} maquina);}
+\DoxyCodeLine{22    \textcolor{keywordtype}{void} \mbox{\hyperlink{class_lista_doble_circular_a3bd54d708fd61b2b35d8451295d583b0}{eliminar}}(\textcolor{keywordtype}{int} \textcolor{keywordtype}{id});}
+\DoxyCodeLine{23    \textcolor{keywordtype}{void} \mbox{\hyperlink{class_lista_doble_circular_a354e18e06218b3976814a31d354c1410}{imprimir}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{24    \textcolor{keywordtype}{void} \mbox{\hyperlink{class_lista_doble_circular_af74a67ef8843c18337116a7e58ba5c94}{imprimirNodo}}(\mbox{\hyperlink{class_nodo}{Nodo}}* nodo);}
+\DoxyCodeLine{25    \textcolor{keywordtype}{int} \mbox{\hyperlink{class_lista_doble_circular_abf2b7ba0f38026fee2ef709118001c35}{tamanioLista}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{26    \textcolor{keywordtype}{void} \mbox{\hyperlink{class_lista_doble_circular_ab060249f14f80ead7de1a57105e0b192}{crearTxt}}(\mbox{\hyperlink{class_nodo}{Nodo}}* nodo);}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{29 \textcolor{keyword}{private}:}
+\DoxyCodeLine{30    \mbox{\hyperlink{class_nodo}{Nodo}}* primero;}
+\DoxyCodeLine{31    \mbox{\hyperlink{class_nodo}{Nodo}}* ultimo;}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 \};}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{37 }
+
+\end{DoxyCode}
