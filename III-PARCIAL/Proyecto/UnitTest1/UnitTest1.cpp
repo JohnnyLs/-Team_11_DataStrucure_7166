@@ -1,3 +1,8 @@
+#include "pch.h"
+#include "CppUnitTest.h"
+#include"../MACHINES4FUN/Ingreso.h"
+#include"../MACHINES4FUN/ListaDobleCircular.h"
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace UnitTest1
 {
