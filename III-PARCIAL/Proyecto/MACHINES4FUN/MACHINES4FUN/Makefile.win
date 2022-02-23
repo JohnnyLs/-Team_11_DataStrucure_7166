@@ -1,0 +1,52 @@
+# Project: Machine4Fun
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = main.o Fabrica.o Maquina.o Operador.o Persona.o Nodo.o Pais.o ListaDobleCircular.o ../../MACHINES4FUN/md5.o
+LINKOBJ  = main.o Fabrica.o Maquina.o Operador.o Persona.o Nodo.o Pais.o ListaDobleCircular.o ../../MACHINES4FUN/md5.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -g3
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = Machine4Fun.exe
+CXXFLAGS = $(CXXINCS) -std=c++11 -g3
+CFLAGS   = $(INCS) -std=c++11 -g3
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+Fabrica.o: Fabrica.cpp
+	$(CPP) -c Fabrica.cpp -o Fabrica.o $(CXXFLAGS)
+
+Maquina.o: Maquina.cpp
+	$(CPP) -c Maquina.cpp -o Maquina.o $(CXXFLAGS)
+
+Operador.o: Operador.cpp
+	$(CPP) -c Operador.cpp -o Operador.o $(CXXFLAGS)
+
+Persona.o: Persona.cpp
+	$(CPP) -c Persona.cpp -o Persona.o $(CXXFLAGS)
+
+Nodo.o: Nodo.cpp
+	$(CPP) -c Nodo.cpp -o Nodo.o $(CXXFLAGS)
+
+Pais.o: Pais.cpp
+	$(CPP) -c Pais.cpp -o Pais.o $(CXXFLAGS)
+
+ListaDobleCircular.o: ListaDobleCircular.cpp
+	$(CPP) -c ListaDobleCircular.cpp -o ListaDobleCircular.o $(CXXFLAGS)
+
+../../MACHINES4FUN/md5.o: ../../MACHINES4FUN/md5.cpp
+	$(CPP) -c ../../MACHINES4FUN/md5.cpp -o ../../MACHINES4FUN/md5.o $(CXXFLAGS)

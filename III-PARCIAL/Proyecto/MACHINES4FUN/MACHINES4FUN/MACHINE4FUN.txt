@@ -1,0 +1,15 @@
+Lista de maquinas
+////////////////////////////////////////////////////////////////////////
+  IDENTI MAQUINA: 1
+  NOMBRE MAQUINA: Spirol
+  IDENTI OPERADOR: 7236
+  NOMBRE OPERADOR: Leonardo Jara
+  CORREO OPERADOR: johnnyloch@espe.edu.ec
+  IDENTI. PAIS : 49
+  NOMBRE  PAIS : Alemania
+  NACIONALIDAD : Alemana
+  NUMERO DE SECCION: 3
+  IDENTI FABRICA: 541
+  NOMBRE FABRICA: Agme
+  CONTAC FABRICA: 4506263
+////////////////////////////////////////////////////////////////////////
